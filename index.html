@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <title>Tic Tac Toe - Neon Mobile</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- SPLASH SCREEN -->
+  <div id="splash">
+    <img src="images/logo.png" class="splash-logo" />
+  </div>
+
+  <!-- WIN / LOSE BIG MESSAGE -->
+  <div id="resultOverlay" class="result-overlay hide">
+    <div id="resultText" class="result-text"></div>
+  </div>
+
+  <h1>Tic-Tac-Toe</h1>
+
+  <div class="controls">
+    <label>Mode:</label>
+    <select id="modeSelect">
+      <option value="single">Single Player</option>
+      <option value="multi">Multiplayer</option>
+    </select>
+
+    <label id="playerLabel">Player:</label>
+    <select id="playerSelect">
+      <option value="X">X</option>
+      <option value="O">O</option>
+    </select>
+
+    <label id="diffLabel">Difficulty:</label>
+    <select id="difficultySelect">
+      <option value="easy">Easy</option>
+      <option value="medium">Medium</option>
+      <option value="hard">Hard</option>
+      <option value="impossible">Impossible</option>
+    </select>
+
+    <button id="restartBtn">Restart</button>
+  </div>
+
+  <div id="status" class="status">Game Started!</div>
+
+  <div id="board" class="board"></div>
+
+  <script src="game.js"></script>
+</body>
+</html>
